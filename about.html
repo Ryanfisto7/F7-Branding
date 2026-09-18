@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — F7 Branding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">F7 BRANDING</a>
+      
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="open-cart-btn" class="cart-nav-btn">
+        CART <span id="cart-count" class="cart-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <h2>Our Brand Philosophy</h2>
+    <div class="product-detail-layout">
+      <div>
+        <p>F7 Branding is an independent online-only streetwear label operating out of Midrand, Gauteng. We engineer high-quality Y2K streetwear pieces tailored specifically for local youth culture and student budgets across South Africa.</p>
+        <p>As an exclusive e-commerce destination, we operate without physical storefront overheads—allowing us to deliver heavy-gsm quality clothing with fast nationwide delivery straight to your doorstep.</p>
+        <p>Follow our journey and upcoming drop announcements on Instagram: <a href="https://instagram.com/f7_branding" target="_blank" style="text-decoration: underline;">@f7_branding</a>.</p>
+      </div>
+      <div class="product-image-wrap">
+        <img src="images/f7branding.png"alt="F7 Brand Culture" class="responsive-img">
+      </div>
+    </div>
+  </main>
+
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>Your Shopping Cart</h3>
+      <button id="close-cart-btn" class="close-cart-btn">&times;</button>
+    </div>
+    <div id="cart-body" class="cart-drawer-body">
+      <p id="empty-cart-msg">Your cart is currently empty.</p>
+      <div id="cart-items-container"></div>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Subtotal:</span>
+        <span id="cart-total-price">R 0.00</span>
+      </div>
+      <button id="checkout-whatsapp-btn" class="btn-primary">
+        Order via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>F7 BRANDING</h3>
+        <p>Online Store | Based in Midrand, Gauteng.</p>
+        <p>Delivering Nationally Across South Africa.</p>
+      </div>
+      <div>
+        <h3>Contact & Social</h3>
+        <p>Tel: 087 765 8654</p>
+        <p>Instagram: <a href="https://instagram.com/f7_branding" target="_blank">@f7_branding</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 F7 Branding. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
