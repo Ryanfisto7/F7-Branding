@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F7 Branding — Official Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">F7 BRANDING</a>
+      
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="open-cart-btn" class="cart-nav-btn">
+        CART <span id="cart-count" class="cart-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <h1>Define Your Edge</h1>
+    <p>Y2K-inspired streetwear engineered for Gauteng youth culture.</p>
+    <a href="shop.html" class="btn-primary" style="width: auto; padding: 0.85rem 2rem;">Shop New Drop</a>
+  </section>
+
+  <main class="main-container">
+    <h2>Latest Collection Showcase</h2>
+    <div class="slideshow-container">
+      <div class="slideshow-track">
+        <div class="slide">
+          <img src="images/f7branding.png" alt="F7 brand-logo showcase 1">
+        </div>
+        <div class="slide">
+          <img src="images/y2k banner.png"F7 Streetwear Showcase 2">
+        </div>
+        <div class="slide">
+          <img src="images/Sreetwear.png"F7 Streetwear Showcase 3">
+        </div>
+      </div>
+    </div>
+
+    <h2>Featured Drops</h2>
+    <p>Online Store Only | Dispatching Nationally from Midrand</p>
+
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="product-image-wrap">
+          <img src="images/graphic tee.jpg" alt="Graphic Tee">
+        </div>
+        <div class="product-info">
+          <h3>Graphic Tee</h3>
+          <p class="product-price">R 299.00</p>
+          <button class="btn-primary add-to-cart-btn" 
+                  data-id="1" 
+                  data-name="Graphic Tee" 
+                  data-price="299" 
+                  data-img="images/graphic tee.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image-wrap">
+          <img src="images/track jacket.png" alt="Track Jacket">
+        </div>
+        <div class="product-info">
+          <h3>Track Jacket</h3>
+          <p class="product-price">R 499.00</p>
+          <button class="btn-primary add-to-cart-btn" 
+                  data-id="2" 
+                  data-name="Track Jacket" 
+                  data-price="499" 
+                  data-img="images/track jacket.png">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image-wrap">
+          <img src="images/cargos pants.jpg" alt="Cargo Pants">
+        </div>
+        <div class="product-info">
+          <h3>Tactical Cargo Pants</h3>
+          <p class="product-price">R 549.00</p>
+          <button class="btn-primary add-to-cart-btn" 
+                  data-id="3" 
+                  data-name="Tactical Cargo Pants" 
+                  data-price="549" 
+                  data-img="images/cargos pants.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image-wrap">
+          <img src="images/hoodie.jpg" alt="Cotton Hoodie">
+        </div>
+        <div class="product-info">
+          <h3>Cotton Hoodie</h3>
+          <p class="product-price">R 599.00</p>
+          <button class="btn-primary add-to-cart-btn" 
+                  data-id="4" 
+                  data-name="Cotton Hoodie" 
+                  data-price="599" 
+                  data-img="images/hoodie.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>Your Shopping Cart</h3>
+      <button id="close-cart-btn" class="close-cart-btn">&times;</button>
+    </div>
+    <div id="cart-body" class="cart-drawer-body">
+      <p id="empty-cart-msg">Your cart is currently empty.</p>
+      <div id="cart-items-container"></div>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Subtotal:</span>
+        <span id="cart-total-price">R 0.00</span>
+      </div>
+      <button id="checkout-whatsapp-btn" class="btn-primary">
+        Order via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>F7 BRANDING</h3>
+        <p>Authentic Y2K streetwear tailored for young trendsetters across South Africa.</p>
+      </div>
+      <div>
+        <h3>Store Details</h3>
+        <p>Midrand, Gauteng (Online Only)</p>
+        <p>Tel: 087 765 8654</p>
+        <p>Instagram: <a href="https://instagram.com/f7_branding" target="_blank">@f7_branding</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 F7 Branding. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

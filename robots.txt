@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://f7branding.co.za/sitemap.xml

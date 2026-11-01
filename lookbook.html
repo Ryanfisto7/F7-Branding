@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lookbook — F7 Branding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">F7 BRANDING</a>
+      
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="lookbook.html" class="active">Lookbook</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="open-cart-btn" class="cart-nav-btn">
+        CART <span id="cart-count" class="cart-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <h2>Street Culture Slideshow</h2>
+    <p>Automated showcase of upcoming Y2K collections across Gauteng streets.</p>
+
+    <div class="slideshow-container">
+      <div class="slideshow-track">
+        <div class="slide">
+          <img src="images/lookbook 1.png"alt="Gauteng Drop">
+        </div>
+        <div class="slide">
+          <img src="images/lookbook 2.png" alt="Upcoming Drop">
+        </div>
+        <div class="slide">
+          <img src="images/lookbook 3.png" alt="Midrand Originals">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>Your Shopping Cart</h3>
+      <button id="close-cart-btn" class="close-cart-btn">&times;</button>
+    </div>
+    <div id="cart-body" class="cart-drawer-body">
+      <p id="empty-cart-msg">Your cart is currently empty.</p>
+      <div id="cart-items-container"></div>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Subtotal:</span>
+        <span id="cart-total-price">R 0.00</span>
+      </div>
+      <button id="checkout-whatsapp-btn" class="btn-primary">
+        Order via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>F7 BRANDING</h3>
+        <p>Online Store | Midrand, Gauteng</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <p>Instagram: <a href="https://instagram.com/f7_branding" target="_blank">@f7_branding</a></p>
+        <p>Tel: 087 765 8654</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 F7 Branding. All Rights Reserved. </p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — F7 Branding</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">F7 BRANDING</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <h2>Get In Touch</h2>
+    <p>We are a 100% online store based in Midrand, delivering nationwide across South Africa.</p>
+    
+    <div class="product-detail-layout">
+      <div class="form-container" style="margin-top: 0;">
+      <form id="contact-form" novalidate>
+          <div id="form-feedback" style="display:none; padding:0.75rem; margin-bottom:1rem; border-radius:4px;"></div>
+          
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" class="form-control" placeholder="Enter your full name">
+            <span class="error-msg" id="name-error" style="color:#ff4d4d; font-size:0.8rem;"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="name@example.com">
+            <span class="error-msg" id="email-error" style="color:#ff4d4d; font-size:0.8rem;"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="form-control" placeholder="e.g. 0677328866">
+            <span class="error-msg" id="phone-error" style="color:#ff4d4d; font-size:0.8rem;"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" placeholder="Inquire about orders or national courier delivery..." rows="4"></textarea>
+            <span class="error-msg" id="message-error" style="color:#ff4d4d; font-size:0.8rem;"></span>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+      <div style="background-color: var(--bg-card); padding: 2rem; border: 1px solid var(--border-color);">
+        <h3>Store Details</h3>
+        <h3>Find Our Midrand Hub</h3>
+        <div class="map-container" style="border: 1px solid var(--border-color); overflow: hidden;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.355155123456!2d28.110512!3d-26.012456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573881234567%3A0x89abcdef12345678!2sMall%20of%20Africa!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza" 
+            width="100%" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>&copy; 2026 F7 Branding. All Rights Reserved. </p>
+    </div>
+  </footer>
+</body>
+</body>
+<script src="script.js"></script>
+</html>
