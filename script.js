@@ -116,13 +116,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (sortValue !== 'default') {
-      cards.sort((a, b) => {
-        const priceA = parseFloat(a.getAttribute('data-price'));
-        const priceB = parseFloat(b.getAttribute('data-price'));
-        return sortValue === 'low-high' ? priceA - priceB : priceB - priceA;
-      });
-      cards.forEach(card => productGrid.appendChild(card));
-    }
+    cards.sort((a, b) => {
+        const priceA = parseFloat(a.getAttribute('data-price')) || 0;
+        const priceB = parseFloat(b.getAttribute('data-price')) || 0;
+
+        if (sortValue === 'low-to-high') {
+            return priceA - priceB;
+        } else if (sortValue === 'high-to-low') {
+            return priceB - priceA;
+        }
+        return 0;
+    });
+    productGrid.innerHTML = '';
+    cards.forEach(card => productGrid.appendChild(card));
+}
   }
   
   const mapElement = document.getElementById('map');

@@ -17,8 +17,6 @@ F7 Branding is an independent online-only streetwear e-commerce platform operati
 * **Form Validation:** Integrated JavaScript regex validation with inline error messaging and asynchronous submission feedback on `contact.html`.
 * **SEO Optimization:** Added comprehensive title tags, meta descriptions, keywords, image alt text, `robots.txt`, and `sitemap.xml`.
 
----
-
 ## 3. SEO Discussion Questions & Answers
 1. *Why are meta descriptions important for e-commerce sites?*
    They provide concise summaries of page content in search engine results pages (SERPs), improving click-through rates (CTR) and user engagement.
